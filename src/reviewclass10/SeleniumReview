@@ -1,0 +1,15 @@
+Selenium Review :
+HTML
+---> almost every opening tag has a closing html follows a hierarchy level approach parent, child, sibling, ancestors;
+Hierarchy:
+ <html>
+    <head>
+    </head>
+    <body>
+    </body>
+ </html>
+
+            <input id="username">
+            <input name="password">
+       </body>
+       </html>

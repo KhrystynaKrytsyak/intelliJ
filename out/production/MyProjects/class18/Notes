@@ -16,7 +16,7 @@ class Car{
 String make;
 String model;
 
-Car(String carMake,String carModel){
+Car(String carMake,String carModel)
 make=carMake;
 model=carModel;
 }
