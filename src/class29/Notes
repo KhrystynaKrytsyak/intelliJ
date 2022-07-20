@@ -1,0 +1,50 @@
+Set Review :
+ -set in Java does not allow duplicate values.
+ There are many types of sets but we will only discuss the most widely used ones which are:
+
+
+HashSet:
+  Upside: fastest of all;
+  Downside: no insertion order is maintained;
+
+LinkedHashSet:
+ Upside: insertion order is maintained;
+ Downside: retrieval of the elements will be super slow;
+           insertion speed slower than HashSet;
+
+TreeSet:
+ Upside: elements will always be sorted in natural order(alphabetical);
+ Downside:  insertion speed is slowest of all ( because everytime we insert
+ it compares with all existing and only then inserts)
+
+ NOTE:
+ 1. They are mostly used to remove duplicates.
+ ==================================================================================================
+
+ Map:
+ --> allow us to store key value pairs. First, entry is treated as key, and the second one is treated as a value.
+ Keys cannot be duplicate but values can be.
+ Map<Integer, String> items = new HashMap<>();
+
+1. HashMap
+     Upside: fastest when it comes to insert and retrieve the elements;
+     Downside: no insertions order;
+
+ 2. LinkedHashMap
+     Upside: insertion order will be maintained;
+     Downside: retrieval will be slowest;
+
+ 3. TreeMap
+     Upside: data will be stored in the sorted form based on key;
+     Downside: insertion is the slowest;
+
+ Choose proper DataStructure:
+ Q1. I want to store unique names in the sorted form.
+ A: TreeSet;
+
+ Q2. I want to store the names of the students and most of the time i will be
+    performing operation related to data retrieval based on index.
+ A: ArrayList
+
+ Q3: I want to store items names and their prices and I want to maintain insertion order
+ A: HashMap

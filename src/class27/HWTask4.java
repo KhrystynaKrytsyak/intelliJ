@@ -13,11 +13,12 @@ public class HWTask4 {
         drinks.add("Seltzer");
         drinks.add("Coffee");
         drinks.add("Tea");
+        drinks.add("Milk");
 
         for (int i=0; i<drinks.size(); i++) {
             if(drinks.get(i).contains("a") || drinks.get(i).contains("e")) {
-                drinks.remove(i);
-                drinks.add("Water");
+                drinks.set(i, "Water"); //replaced
+
             }
         }
         System.out.println(drinks);

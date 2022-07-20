@@ -8,7 +8,9 @@ public class HWTask1 {
     //Check whether the specific name is present in an ArrayList or not?
     //Find the size of your arrayList and print all values from that
     public static void main(String[] args) {
-        ArrayList <String> names = new ArrayList<>();
+        //always good to specify initial capacity
+        //it improves the performance
+        ArrayList <String> names = new ArrayList<>(5);
         names.add("Asghar");
         names.add("Asel");
         names.add("Sohel");
